@@ -3,922 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تطبيق ذِكْر — رفيقك اليومي للقرآن الكريم، الأذكار، ومواقيت الصلاة</title>
-  <meta name="description" content="تطبيق إسلامي شامل وفاخر يجمع بين قدسية النص القرآني بالرسم العثماني، والاستماع بأصوات كبار القراء، ومواقيت الصلاة الدقيقة، والأذكار المأثورة. مجاني بالكامل وبدون إعلانات.">
-  <meta name="keywords" content="تطبيق ذكر, القران الكريم, اذكار الصباح والمساء, مواقيت الصلاة, اتجاه القبلة, حصن المسلم, استماع القران, ختمة القران, بدون اعلانات, com.zekrapp.islamic">
-  <meta name="author" content="إسلام صالح | Eslam Saleh">
-  <meta name="theme-color" content="#146451">
-
-  <!-- Open Graph / Social Media -->
+  <meta name="theme-color" content="#0c4438">
+  <meta name="description" content="ذِكر — رفيق يومي هادئ للقرآن الكريم، الأذكار، مواقيت الصلاة واتجاه القبلة. مجاني وبدون إعلانات.">
+  <meta name="author" content="Eslam Saleh">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://eslamsaleeh98.github.io/Zekr-App/">
-  <meta property="og:title" content="تطبيق ذِكْر — رفيقك اليومي لطمأنينة القلب ونور القرآن">
-  <meta property="og:description" content="تطبيق إسلامي ملكي فاخر، بدون إعلانات، مع تصفح المصحف، تلاوات خاشعة، مواقيت الصلاة، والمسبحة الذكية.">
+  <meta property="og:title" content="ذِكر — رفيقك اليومي للقرآن والأذكار">
+  <meta property="og:description" content="تجربة إيمانية هادئة تجمع القرآن والأذكار ومواقيت الصلاة في مكان واحد.">
   <meta property="og:image" content="assets/logo.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="apple-touch-icon" href="assets/logo.png">
-
-  <!-- Google Fonts: Tajawal & Amiri -->
+  <title>ذِكر — رفيقك اليومي للقرآن والأذكار</title>
+  <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-announcement">
-    <span class="badge-pill">وقف إسلامي خالص</span>
-    <span>تطبيق «ذِكْر» مجاني 100% مدى الحياة بدون أي إعلانات تجارية لوجه الله تعالى 🌿</span>
-  </div>
-
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="container">
-      <a href="#" class="brand">
-        <img src="assets/zekr_logo.svg" alt="شعار تطبيق ذكر" class="brand-logo">
-      </a>
-
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link">عن التطبيق</a></li>
-          <li><a href="#features" class="nav-link">المميزات</a></li>
-          <li><a href="#mushaf" class="nav-link">المصحف والتلاوة</a></li>
-          <li><a href="#audio" class="nav-link">القرآن الصوتي</a></li>
-          <li><a href="#legal" class="nav-link">الخصوصية والشروط</a></li>
-          <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
-        </ul>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="العودة إلى بداية الصفحة"><img src="assets/zekr_logo.svg" alt="ذِكر" width="126" height="44"></a>
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+        <a href="#experience">التجربة</a><a href="#features">المزايا</a><a href="#audio">التلاوات</a><a href="#faq">الأسئلة الشائعة</a>
       </nav>
-
-      <div class="nav-actions">
-        <!-- Google Play Button -->
-        <a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer" class="store-badge-btn" title="تطبيق ذكر على متجر جوجل بلاي">
-          <svg viewBox="0 0 512 512" width="22" height="22">
-            <path fill="#4285F4" d="M47.1 24.3C40.6 31 37 41.5 37 54.8v402.4c0 13.3 3.6 23.8 10.1 30.5l1.6 1.4 225.4-225.4v-5.4L48.7 22.9l-1.6 1.4z"/>
-            <path fill="#FBBC04" d="M349.5 329.1l-75.4-75.4v-5.4l75.4-75.4 1.7 1 89.3 50.8c25.5 14.5 25.5 38.3 0 52.8l-89.3 50.8-1.7.8z"/>
-            <path fill="#EA4335" d="M274.1 253.7L48.7 479.1c8.4 8.9 22.3 9.9 37.9 1.1l264.6-150.3-77.1-76.2z"/>
-            <path fill="#34A853" d="M274.1 258.3l77.1-76.2L86.6 31.8C71 23 57.1 24 48.7 32.9L274.1 258.3z"/>
-          </svg>
-          <div class="store-text">
-            <span class="store-subtitle">تحميل من</span>
-            <span class="store-title">Google Play</span>
-          </div>
-        </a>
-
-        <!-- GitHub Repo Button -->
-        <a href="https://github.com/eslamsaleeh98/Zekr-App" target="_blank" rel="noopener noreferrer" class="btn btn-github" title="المستودع المفتوح على GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-          الكود المصدري
-        </a>
-      </div>
-
-      <!-- Mobile Hamburger Button -->
-      <button class="mobile-toggle" id="mobileToggle" aria-label="فتح القائمة">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+      <a class="nav-download" href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer"><span>حمّل التطبيق</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
     </div>
-
-    <!-- Mobile Drawer Menu (Visible only when toggled on mobile) -->
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href="#about" class="nav-link">عن التطبيق</a></li>
-        <li><a href="#features" class="nav-link">المميزات</a></li>
-        <li><a href="#mushaf" class="nav-link">المصحف والتلاوة</a></li>
-        <li><a href="#audio" class="nav-link">القرآن الصوتي</a></li>
-        <li><a href="#legal" class="nav-link">الخصوصية والشروط</a></li>
-        <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
-      </ul>
-      <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 18px;">
-        <a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer" class="store-badge-btn" style="justify-content: center;">
-          <svg viewBox="0 0 512 512" width="22" height="22">
-            <path fill="#4285F4" d="M47.1 24.3C40.6 31 37 41.5 37 54.8v402.4c0 13.3 3.6 23.8 10.1 30.5l1.6 1.4 225.4-225.4v-5.4L48.7 22.9l-1.6 1.4z"/>
-            <path fill="#FBBC04" d="M349.5 329.1l-75.4-75.4v-5.4l75.4-75.4 1.7 1 89.3 50.8c25.5 14.5 25.5 38.3 0 52.8l-89.3 50.8-1.7.8z"/>
-            <path fill="#EA4335" d="M274.1 253.7L48.7 479.1c8.4 8.9 22.3 9.9 37.9 1.1l264.6-150.3-77.1-76.2z"/>
-            <path fill="#34A853" d="M274.1 258.3l77.1-76.2L86.6 31.8C71 23 57.1 24 48.7 32.9L274.1 258.3z"/>
-          </svg>
-          <div class="store-text">
-            <span class="store-subtitle">تحميل من</span>
-            <span class="store-title">Google Play</span>
-          </div>
-        </a>
-        <a href="https://github.com/eslamsaleeh98/Zekr-App/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary">تحميل حزمة APK مباشرة</a>
-      </div>
-    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="التنقل على الهاتف">
+      <a href="#experience">التجربة</a><a href="#features">المزايا</a><a href="#audio">التلاوات</a><a href="#faq">الأسئلة الشائعة</a><a class="mobile-download" href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer">حمّل التطبيق</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span>🌿</span>
-            <span>وقف لوجه الله تعالى • مجاني 100% وبدون أي إعلانات</span>
-          </div>
-
-          <h1 class="hero-title">
-            رفيقك اليومي لطمأنينة القلب <br>
-            <span class="highlight">ونور القرآن الكريم</span>
-          </h1>
-
-          <p class="hero-desc">
-            تطبيق إسلامي شامل وفاخر يجمع بين قدسية النص القرآني برسم مصحف المدينة المنورة، وتلاوات خاشعة بأصوات نخبة من أشهر القراء مع محرك تشغيل متطور في الخلفية، ومواقيت صلاة دقيقة، وأذكار مأثورة بتصميم ملكي هادئ يريح البصر والقلب.
-          </p>
-
+  <main id="main">
+    <section class="hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> تطبيق إسلامي مجاني — بلا إعلانات</div>
+          <h1>لحظاتك اليومية<br><em>أقرب إلى الطمأنينة</em></h1>
+          <p class="hero-lead">القرآن الكريم، الأذكار، مواقيت الصلاة واتجاه القبلة في تجربة واحدة هادئة صُممت لترافقك دون أن تشتتك.</p>
           <div class="hero-actions">
-            <!-- Google Play Store Badge -->
-            <a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer" class="store-badge-btn" style="padding: 12px 24px;">
-              <svg viewBox="0 0 512 512" width="28" height="28">
-                <path fill="#4285F4" d="M47.1 24.3C40.6 31 37 41.5 37 54.8v402.4c0 13.3 3.6 23.8 10.1 30.5l1.6 1.4 225.4-225.4v-5.4L48.7 22.9l-1.6 1.4z"/>
-                <path fill="#FBBC04" d="M349.5 329.1l-75.4-75.4v-5.4l75.4-75.4 1.7 1 89.3 50.8c25.5 14.5 25.5 38.3 0 52.8l-89.3 50.8-1.7.8z"/>
-                <path fill="#EA4335" d="M274.1 253.7L48.7 479.1c8.4 8.9 22.3 9.9 37.9 1.1l264.6-150.3-77.1-76.2z"/>
-                <path fill="#34A853" d="M274.1 258.3l77.1-76.2L86.6 31.8C71 23 57.1 24 48.7 32.9L274.1 258.3z"/>
-              </svg>
-              <div class="store-text">
-                <span class="store-subtitle">متوفر على</span>
-                <span class="store-title">Google Play</span>
-              </div>
+            <a class="store-button" href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer" aria-label="تحميل تطبيق ذِكر من Google Play">
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#34A853" d="M48 22l252 234L48 490c-7-8-11-19-11-33V55c0-14 4-25 11-33z"/><path fill="#4285F4" d="M300 256L77 49c14-8 29-7 45 2l263 149-85 56z"/><path fill="#FBBC04" d="M300 256l85 56-263 149c-16 9-31 10-45 2l223-207z"/><path fill="#EA4335" d="M385 200l55 31c31 18 31 32 0 50l-55 31-85-56 85-56z"/></svg>
+              <span><small>متوفر الآن على</small><strong>Google Play</strong></span>
             </a>
-
-            <!-- Direct APK Download Button -->
-            <a href="https://github.com/eslamsaleeh98/Zekr-App/releases" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-              </svg>
-              تحميل APK مباشر (v1.0.0)
-            </a>
-
-            <!-- GitHub Repo Link -->
-            <a href="https://github.com/eslamsaleeh98/Zekr-App" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-              </svg>
-              GitHub
-            </a>
+            <a class="text-link" href="#experience">استكشف التجربة <span aria-hidden="true">←</span></a>
           </div>
-
-          <div class="playstore-notice">
-            <span>ℹ️ معرف الحزمة الرسمي:</span>
-            <code>com.zekrapp.islamic</code>
-            <span>• مجاني بالكامل بدون مشتريات داخلية</span>
-          </div>
-
-          <div class="hero-badges-row">
-            <div class="hero-badge-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-              <span>خصوصية تامة وبدون تتبع</span>
-            </div>
-            <div class="hero-badge-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-              <span>رسم المصحف العثماني الأصيل</span>
-            </div>
-            <div class="hero-badge-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-              </svg>
-              <span>يعمل بدون إنترنت (Offline)</span>
-            </div>
-          </div>
+          <ul class="trust-list" aria-label="مزايا أساسية"><li><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>خصوصية تامة</li><li><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>بدون مشتريات داخلية</li><li><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>محتوى موثوق</li></ul>
         </div>
 
-        <!-- Realistic Phone Mockup with Tab Switcher -->
-        <div class="mockup-wrapper">
-          <div class="mockup-backdrop-glow"></div>
-          <div class="phone-frame">
+        <div class="hero-visual reveal" aria-label="معاينة من تطبيق ذِكر">
+          <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="floating-card prayer-card"><span class="float-icon"><svg viewBox="0 0 24 24"><path d="M12 3v2m7 7h2M3 12h2m12-7-1.5 1.5M8.5 6.5 7 5m2 12a5 5 0 1 1 6 0v2H9v-2Z"/></svg></span><span><small>الصلاة القادمة</small><strong>العصر · ٣:٢٧</strong></span></div>
+          <div class="phone-shell">
+            <div class="phone-top"><span>٩:٤١</span><i></i><span>◔ ٥G</span></div>
             <div class="phone-screen">
-              
-              <!-- Realistic Phone Status Bar -->
-              <div class="phone-status-bar">
-                <span>١٢:٣٠</span>
-                <div class="dynamic-island"></div>
-                <div style="display: flex; align-items: center; gap: 4px;">
-                  <span>5G</span>
-                  <span>100%</span>
-                </div>
-              </div>
-
-              <!-- Phone Content Area -->
-              <div class="phone-content">
-
-                <!-- Tab 1: Mushaf View -->
-                <div class="preview-tab-pane active" id="tab-mushaf">
-                  <div class="screen-mushaf-view">
-                    <div class="screen-mushaf-bar">
-                      <span class="subtitle">الجزء الأول • ص ١</span>
-                      <span class="title">سُوْرَةُ الفَاتِحَةِ</span>
-                      <span class="subtitle">مكية • ٧ آيات</span>
-                    </div>
-                    <img src="assets/page001.webp" alt="مصحف المدينة المنورة - سورة الفاتحة" class="screen-mushaf-img">
-                  </div>
-                </div>
-
-                <!-- Tab 2: Audio Player View -->
-                <div class="preview-tab-pane" id="tab-audio">
-                  <div style="padding: 16px 14px; background: #FAF7F0; height: 100%; display: flex; flex-direction: column; justify-content: center;">
-                    <div class="audio-preview-card">
-                      <div class="audio-header">
-                        <div class="audio-surah-info">
-                          <h4>سورة الفاتحة</h4>
-                          <span>القارئ: مشاري راشد العفاسي</span>
-                        </div>
-                        <img src="assets/logo.png" alt="Zekr" width="36" height="36" style="border-radius: 8px;">
-                      </div>
-
-                      <div style="text-align: center; margin: 12px 0;">
-                        <span style="display: inline-block; padding: 4px 12px; background: rgba(197, 154, 69, 0.2); color: #E0BA6D; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">
-                          تلاوة خاشعة • تتابع ذكي
-                        </span>
-                      </div>
-
-                      <div class="audio-progress" id="phoneAudioProgress">
-                        <div class="audio-progress-bar" style="width: 42%;"></div>
-                      </div>
-                      <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: rgba(255,255,255,0.7);">
-                        <span>0:42</span>
-                        <span>1:38</span>
-                      </div>
-
-                      <div class="audio-controls">
-                        <button class="audio-btn" title="السابق">⏮</button>
-                        <button class="audio-btn play-btn" id="phoneMockupPlayBtn" title="تشغيل">▶</button>
-                        <button class="audio-btn" title="التالي">⏭</button>
-                      </div>
-
-                      <div style="margin-top: 16px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; font-size: 0.74rem;">
-                        <span>⏱ مؤقت النوم: 30 دقيقة</span>
-                        <span>🔁 تكرار السورة</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tab 3: Prayer Times View -->
-                <div class="preview-tab-pane" id="tab-prayer">
-                  <div style="padding: 10px 14px; background: #FAF7F0;">
-                    <div style="background: linear-gradient(135deg, #135A4A 0%, #0D3B2B 100%); color: #fff; padding: 14px; border-radius: 18px; text-align: center; margin-bottom: 10px;">
-                      <span style="font-size: 0.75rem; color: #E0BA6D; font-weight: 700;">الصلاة القادمة</span>
-                      <h3 style="font-size: 1.3rem; margin: 2px 0;">صلاة العصر</h3>
-                      <div style="font-size: 1.5rem; font-weight: 900; color: #fff; letter-spacing: 1px;" id="liveCountdown">02:14:35</div>
-                      <span style="font-size: 0.72rem; color: rgba(255,255,255,0.8);">الأذان القادم: 03:15 م</span>
-                    </div>
-
-                    <div style="display: flex; flex-direction: column; gap: 5px;">
-                      <div style="background: #fff; border: 1px solid #E8E2D5; padding: 7px 12px; border-radius: 10px; display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
-                        <span>الفجر</span>
-                        <span style="color: #146451;">05:04 ص</span>
-                      </div>
-                      <div style="background: #fff; border: 1px solid #E8E2D5; padding: 7px 12px; border-radius: 10px; display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
-                        <span>الشروق</span>
-                        <span style="color: #8E9F96;">06:31 ص</span>
-                      </div>
-                      <div style="background: #fff; border: 1px solid #E8E2D5; padding: 7px 12px; border-radius: 10px; display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
-                        <span>الظهر</span>
-                        <span style="color: #146451;">11:53 ص</span>
-                      </div>
-                      <div style="background: #F0F6F2; border: 1.5px solid #146451; padding: 7px 12px; border-radius: 10px; display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 800; color: #146451;">
-                        <span>العصر (القادمة)</span>
-                        <span>03:15 م</span>
-                      </div>
-                      <div style="background: #fff; border: 1px solid #E8E2D5; padding: 7px 12px; border-radius: 10px; display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
-                        <span>المغرب</span>
-                        <span style="color: #146451;">05:14 م</span>
-                      </div>
-                      <div style="background: #fff; border: 1px solid #E8E2D5; padding: 7px 12px; border-radius: 10px; display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
-                        <span>العشاء</span>
-                        <span style="color: #146451;">06:34 م</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tab 4: Athkar & Masbaha View -->
-                <div class="preview-tab-pane" id="tab-athkar">
-                  <div style="padding: 10px 14px; background: #FAF7F0;">
-                    <div style="background: #fff; border: 1px solid #E8E2D5; border-radius: 16px; padding: 14px; text-align: center; margin-bottom: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
-                      <span style="display: inline-block; padding: 3px 10px; background: #FAF4E8; color: #C59A45; border-radius: 8px; font-size: 0.75rem; font-weight: 800; margin-bottom: 6px;">
-                        أذكار الصباح والمساء
-                      </span>
-                      <p style="font-size: 0.92rem; line-height: 1.7; color: #1E2B25; font-weight: 600;">
-                        «أَصْبَحْنَا وَأَصْبَحَ المُلْكُ لِلَّهِ، وَالحَمْدُ لِلَّهِ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ»
-                      </p>
-                      <div style="margin-top: 10px; display: flex; align-items: center; justify-content: center;">
-                        <span style="width: 40px; height: 40px; border-radius: 50%; background: #146451; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 800;">
-                          ١/٣
-                        </span>
-                      </div>
-                    </div>
-
-                    <!-- Interactive Tasbih Demo inside Mockup -->
-                    <div style="background: #fff; border: 1px solid #E8E2D5; border-radius: 16px; padding: 14px; text-align: center;">
-                      <span style="font-size: 0.78rem; color: #64786E; font-weight: 700;">المسبحة الإلكترونية الذكية (اضغط للتسبيح)</span>
-                      <div style="font-size: 2.2rem; font-weight: 900; color: #146451; margin: 4px 0; cursor: pointer; user-select: none;" id="tasbihCounter">٣٣</div>
-                      <button id="tasbihBtn" style="background: var(--gold-gradient); color: #fff; border: none; padding: 6px 18px; border-radius: 20px; font-weight: 800; font-size: 0.8rem; cursor: pointer;">
-                        سُبْحَانَ اللَّهِ وَبِحَمْدِهِ 📿
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tab 5: Share Card View -->
-                <div class="preview-tab-pane" id="tab-share">
-                  <div style="padding: 14px 10px; background: #FAF7F0; height: 100%; display: flex; flex-direction: column; justify-content: center;">
-                    <div class="share-card-sample">
-                      <div class="surah-banner-sample">سُوْرَةُ آلِ عِمْرَانَ</div>
-                      <div class="ayah-sample">
-                        ﴿ رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً إِنَّكَ أَنتَ الْوَهَّابُ ﴾
-                      </div>
-                      <div class="brand-signature">
-                        <img src="assets/zekr_logo.svg" alt="شعار ذكر" height="28">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- Phone Bottom Home Indicator -->
-              <div class="phone-home-indicator"></div>
+              <div class="app-head"><div><small>السلام عليكم</small><strong>ابدأ يومك بذكر الله</strong></div><img src="assets/logo.png" alt="" width="42" height="42"></div>
+              <div class="daily-card"><span>ورد اليوم</span><p>﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾</p><small>الرعد · ٢٨</small></div>
+              <div class="next-prayer"><div><small>الصلاة القادمة</small><strong>صلاة العصر</strong></div><div class="prayer-time"><strong>٣:٢٧</strong><small>متبقي ١:٤٢</small></div></div>
+              <div class="quick-title"><strong>رفيقك اليومي</strong><span>عرض الكل</span></div>
+              <div class="quick-grid"><div><img src="assets/quran.svg" alt=""><span>القرآن</span></div><div><img src="assets/adhkar_morning_evening.svg" alt=""><span>الأذكار</span></div><div><img src="assets/tasbih.svg" alt=""><span>المسبحة</span></div><div><img src="assets/qibla.svg" alt=""><span>القبلة</span></div></div>
             </div>
           </div>
-
-          <!-- Mockup Switcher Controls -->
-          <div class="mockup-tabs">
-            <button class="mockup-tab-btn active" data-tab="mushaf">📖 المصحف الشريف</button>
-            <button class="mockup-tab-btn" data-tab="audio">🎧 مشغل التلاوات</button>
-            <button class="mockup-tab-btn" data-tab="prayer">🕌 مواقيت الصلاة والأذان</button>
-            <button class="mockup-tab-btn" data-tab="athkar">📿 الأذكار والمسبحة</button>
-            <button class="mockup-tab-btn" data-tab="share">🖼️ بطاقات المشاركة</button>
-          </div>
+          <div class="floating-card tasbih-card"><span class="tasbih-number">٣٣</span><span><small>تسبيحة اليوم</small><strong>سبحان الله</strong></span></div>
         </div>
       </div>
-    </div>
-  </section>
+      <a class="scroll-cue" href="#experience" aria-label="مرر لاستكشاف الصفحة"><span></span> اكتشف المزيد</a>
+    </section>
 
-  <!-- 4 Pillars Section (لماذا ذِكْر) -->
-  <section class="pillars" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">لماذا تطبيق ذِكْر؟</span>
-        <h2 class="section-title">صُمم ليكون خالصاً، نقياً، وقريباً من قلبك</h2>
-        <p class="section-desc">لا إعلانات تشتت خشوعك، لا اشتراكات مدفوعة، ولا تتبع لخصوصيتك. كل حرف وكل صوت وُضع بنية الأجر والصدقة الجارية.</p>
-      </div>
-
-      <div class="pillars-grid">
-        <div class="pillar-card">
-          <div class="pillar-icon">🌿</div>
-          <h3 class="pillar-title">وقف خالص لوجه الله</h3>
-          <p class="pillar-desc">مجاني 100% مدى الحياة، خالٍ تماماً من أي إعلانات تجارية أو نوافذ منبثقة تصرفك عن تلاوتك وذكرك.</p>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon">📜</div>
-          <h3 class="pillar-title">مصحف المدينة الأصيل</h3>
-          <p class="pillar-desc">صفحات المصحف الشريف عالية الدقة بالرسم العثماني المعتمد برواية حفص عن عاصم مع التفسير ومعاني الكلمات.</p>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon">🎧</div>
-          <h3 class="pillar-title">محرك صوتي متطور</h3>
-          <p class="pillar-desc">مشغل وسائط أصيل (MediaSession) يدعم العمل في الخلفية، والتحكم من شاشة القفل وسماعات البلوتوث، والتشغيل بدون نت.</p>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon">🛡️</div>
-          <h3 class="pillar-title">حماية تامة للخصوصية</h3>
-          <p class="pillar-desc">حساب مواقيت الصلاة والقبلة يتم محلياً بالكامل على جهازك دون إرسال أو تخزين أي بيانات في خوادم خارجية.</p>
+    <section class="intro" id="experience">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="section-kicker">تجربة متوازنة</span><h2>كل ما تحتاجه ليومٍ عامر بالذِكر</h2><p>واجهة بسيطة تُقرّب المحتوى إليك، وتترك المساحة للمعنى.</p></div>
+        <div class="experience-grid">
+          <div class="experience-copy reveal"><div class="experience-tabs" role="tablist" aria-label="استكشف خصائص التطبيق">
+            <button class="experience-tab active" id="tab-quran" role="tab" aria-selected="true" aria-controls="panel-quran" data-panel="quran"><span>01</span><strong>مصحف واضح ومريح</strong><small>تصفّح هادئ بالرسم العثماني</small></button>
+            <button class="experience-tab" id="tab-prayer" role="tab" aria-selected="false" aria-controls="panel-prayer" data-panel="prayer"><span>02</span><strong>الصلاة في وقتها</strong><small>مواقيت دقيقة واتجاه القبلة</small></button>
+            <button class="experience-tab" id="tab-adhkar" role="tab" aria-selected="false" aria-controls="panel-adhkar" data-panel="adhkar"><span>03</span><strong>أذكارك قريبة دائمًا</strong><small>الصباح والمساء والمناسبات</small></button>
+          </div></div>
+          <div class="experience-device reveal"><div class="mini-phone"><div class="mini-notch"></div>
+            <div class="experience-panel active" id="panel-quran" role="tabpanel" aria-labelledby="tab-quran"><div class="mushaf-head"><small>الجزء الأول</small><strong>سورة الفاتحة</strong><small>٧ آيات</small></div><div class="mushaf-page"><img src="assets/page001.webp" alt="صفحة سورة الفاتحة من المصحف"></div><div class="reader-bar"><button type="button" aria-label="تشغيل التلاوة">▶</button><span><strong>سورة الفاتحة</strong><small>مشاري راشد العفاسي</small></span><i></i></div></div>
+            <div class="experience-panel" id="panel-prayer" role="tabpanel" aria-labelledby="tab-prayer" hidden><div class="prayer-panel-head"><small>القاهرة، مصر</small><strong>الخميس، ٥ جمادى الآخرة</strong></div><div class="prayer-hero"><span>الصلاة القادمة</span><strong>العصر</strong><b>٣:٢٧ م</b><small>متبقي ساعة و٤٢ دقيقة</small></div><ul class="prayer-list"><li><span>الفجر</span><b>٥:٠٢</b></li><li><span>الشروق</span><b>٦:٣١</b></li><li><span>الظهر</span><b>١١:٤٦</b></li><li class="current"><span>العصر</span><b>٣:٢٧</b></li><li><span>المغرب</span><b>٥:٠١</b></li><li><span>العشاء</span><b>٦:٢٢</b></li></ul></div>
+            <div class="experience-panel" id="panel-adhkar" role="tabpanel" aria-labelledby="tab-adhkar" hidden><div class="adhkar-head"><small>أذكار الصباح</small><strong>ابدأ يومك بذكر الله</strong><div><span>٤ من ٢٣</span><i><b></b></i></div></div><div class="dhikr-card"><span>٤ / ٢٣</span><p>أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ...</p><button type="button"><b>١</b><small>اضغط بعد القراءة</small></button></div><div class="adhkar-nav"><span>السابق</span><span>التالي</span></div></div>
+          </div></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Deep Dive Features -->
-  <section class="features-detailed" id="mushaf">
-    <div class="container">
-
-      <!-- Feature 1: Holy Quran -->
-      <div class="feature-block">
-        <div class="feature-content">
-          <span class="feature-badge">المصحف والتلاوة</span>
-          <h2 class="feature-title">المصحف الشريف بالرسم العثماني الأصيل مع التفسير والختمات</h2>
-          <p class="feature-desc">
-            عش تجربة القراءة من المصحف الورقي بدقة تفوق التوقعات. تصفح 604 صفحة بجودة فائقة بدون الحاجة إلى الاتصال بالإنترنت، مع فهرس دقيق للسور والأجزاء وخطط ختم القرآن.
-          </p>
-
-          <ul class="feature-checklist">
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>رسم المصحف العثماني الأصيل برواية حفص عن عاصم (خط مجمع الملك فهد).</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>التفسير الميسر المعتمد لكل آية بلمسة واحدة أثناء القراءة.</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>معاني الكلمات الغريبة لتسهيل التدبر والفهم السليم لكتاب الله.</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>إمكانية حفظ موضع القراءة والعلامات المرجعية والرجوع إليها بلمسة واحدة.</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>نظام متابعة الختمات (تحديد الأيام المستهدفة، الورد اليومي، ونسبة الإنجاز).</span>
-            </li>
-          </ul>
-
-          <a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer" class="btn btn-primary">تصفح المصحف الآن</a>
-        </div>
-
-        <div class="feature-visual">
-          <img src="assets/page001.webp" alt="مصحف المدينة" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-md); display: block;">
-        </div>
+    <section class="features" id="features"><div class="container">
+      <div class="section-heading reveal"><span class="section-kicker">مصمّم ليبقى بسيطًا</span><h2>تفاصيل صغيرة تصنع تجربة أهدأ</h2></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-main reveal"><div class="feature-icon"><img src="assets/quran.svg" alt=""></div><span>القرآن الكريم</span><h3>قراءة واستماع في تجربة واحدة</h3><p>تصفّح المصحف بالرسم العثماني، وواصل وردك من حيث توقفت، واستمع إلى التلاوات دون مغادرة الصفحة.</p><div class="surah-preview" aria-hidden="true"><small>سورة الإخلاص</small><p>قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ</p><div><span></span><button type="button">▶</button></div></div></article>
+        <article class="feature-card reveal"><div class="feature-icon"><img src="assets/prayer_time.svg" alt=""></div><span>مواقيت الصلاة</span><h3>اعرف وقتك بنظرة واحدة</h3><p>مواقيت واضحة لمدينتك مع عدّ تنازلي للصلاة القادمة.</p></article>
+        <article class="feature-card reveal"><div class="feature-icon"><img src="assets/qibla.svg" alt=""></div><span>اتجاه القبلة</span><h3>بوصلة بسيطة ودقيقة</h3><p>واجهة مركّزة تساعدك على معرفة اتجاه القبلة أينما كنت.</p></article>
+        <article class="feature-card reveal"><div class="feature-icon"><img src="assets/tasbih.svg" alt=""></div><span>المسبحة</span><h3>ذِكر بلا تشتيت</h3><p>عداد تسبيح هادئ يحفظ تقدمك ويعينك على المداومة.</p></article>
+        <article class="feature-card feature-wide reveal"><div><div class="feature-icon"><img src="assets/adhkar_morning_evening.svg" alt=""></div><span>الأذكار والأدعية</span><h3>حصنك اليومي في كل وقت</h3><p>أذكار الصباح والمساء وأدعية المناسبات مرتّبة لتصل إليها بسهولة.</p></div><div class="adhkar-stack" aria-hidden="true"><span>أذكار الصباح <b>٢٣</b></span><span>أذكار المساء <b>٢١</b></span><span>أذكار النوم <b>١٣</b></span></div></article>
       </div>
+    </div></section>
 
-      <!-- Feature 2: Audio Player -->
-      <div class="feature-block reversed" id="audio">
-        <div class="feature-content">
-          <span class="feature-badge">المكتبة الصوتية ومحرك الاستماع</span>
-          <h2 class="feature-title">تلاوات خاشعة بأصوات كبار القراء مع استمرار التشغيل في الخلفية</h2>
-          <p class="feature-desc">
-            استمع لكتاب الله بأصوات أشهر القراء في العالم الإسلامي بجودة نقية. تم تزويد التطبيق بنظام MediaSession أصيل يتيح التحكم من شاشة القفل، سماعات البلوتوث، وشاشات السيارات (Android Auto).
-          </p>
+    <section class="audio-section" id="audio"><div class="audio-glow" aria-hidden="true"></div><div class="container audio-grid">
+      <div class="audio-copy reveal"><span class="section-kicker light">القرآن بصوتٍ يلامس القلب</span><h2>تلاوات ترافقك<br>أينما كنت</h2><p>استمع إلى تلاوات مختارة بصوت القارئ مشاري راشد العفاسي، مع مشغّل واضح وتجربة هادئة.</p><ul><li>تشغيل صوتي في الخلفية</li><li>متابعة سهلة للسورة الحالية</li><li>تحكم مباشر من المشغّل</li></ul></div>
+      <div class="audio-player reveal"><audio id="audioSample" preload="metadata" src="assets/sound/mishary_alafasy_sample.mp3"></audio><div class="audio-art"><img src="assets/logo.png" alt="شعار تطبيق ذِكر"><span class="sound-wave"><i></i><i></i><i></i><i></i><i></i></span></div><div class="track-meta"><small>تلاوة الآن</small><h3>سورة الفاتحة</h3><p>مشاري راشد العفاسي</p></div><div class="timeline" id="timeline" role="slider" tabindex="0" aria-label="موضع التلاوة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress"></span></div><div class="track-time"><span id="currentTime">٠:٠٠</span><span id="duration">٠:٠٠</span></div><div class="player-controls"><button type="button" aria-label="السابق">⇥</button><button class="play-button" id="playButton" type="button" aria-label="تشغيل التلاوة"><span id="playIcon">▶</span></button><button type="button" aria-label="التالي">⇤</button></div></div>
+    </div></section>
 
-          <ul class="feature-checklist">
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>نخبة من كبار القراء (المنشاوي، الحصري، عبد الباسط، مشاري العفاسي، السديس، القطامي، وغيرهم).</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>تنزيل السور والاستماع إليها في وضع عدم الاتصال (Offline) في السفر وأي مكان.</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>أنماط تشغيل مرنة: تشغيل متتالي، تشغيل عشوائي، تكرار السورة، وسرعات قراءة متعددة.</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>مؤقت النوم الذكي (Sleep Timer) لإيقاف الصوت تلقائياً بعد فترة محددة أو عند انتهاء السورة.</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>إنشاء قوائم تشغيل مخصصة (Custom Playlists) لسورك وتلاواتك المفضلة.</span>
-            </li>
-          </ul>
+    <section class="principles"><div class="container principles-grid">
+      <div class="principles-copy reveal"><span class="section-kicker">مبادئنا</span><h2>مساحة للذِكر،<br>لا للإعلانات</h2><p>صُمّم التطبيق ليخدم غاية واحدة: أن يجعل الوصول إلى القرآن والذِكر أسهل، دون إعلانات تجارية أو تتبع مزعج.</p><a class="text-link dark" href="privacy.html">اقرأ سياسة الخصوصية <span>←</span></a></div>
+      <div class="principles-list reveal"><div><span>01</span><div><strong>مجاني بالكامل</strong><p>كل المزايا متاحة دون اشتراك أو مشتريات داخل التطبيق.</p></div></div><div><span>02</span><div><strong>خصوصيتك أولًا</strong><p>لا نبيع بياناتك ولا نعرض إعلانات تجارية.</p></div></div><div><span>03</span><div><strong>تجربة تحترم وقتك</strong><p>واجهة مباشرة تساعدك على الوصول إلى ما تريد سريعًا.</p></div></div></div>
+    </div></section>
 
-          <a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer" class="btn btn-primary">استمع للتلاوات الخاشعة</a>
-        </div>
+    <section class="faq" id="faq"><div class="container faq-grid">
+      <div class="section-heading reveal"><span class="section-kicker">لديك سؤال؟</span><h2>الأسئلة الشائعة</h2><p>أهم ما قد تحتاج معرفته قبل تحميل التطبيق.</p></div>
+      <div class="faq-list reveal"><article class="faq-item active"><button type="button" aria-expanded="true"><span>هل تطبيق ذِكر مجاني؟</span><i>−</i></button><div class="faq-answer"><p>نعم، التطبيق مجاني بالكامل ولا يحتوي على إعلانات تجارية أو مشتريات داخلية.</p></div></article><article class="faq-item"><button type="button" aria-expanded="false"><span>هل يمكن استخدام التطبيق دون إنترنت؟</span><i>+</i></button><div class="faq-answer"><p>يمكن استخدام أجزاء أساسية من المحتوى دون اتصال، بينما تحتاج بعض الخصائص مثل تنزيل التلاوات أو تحديث البيانات إلى الإنترنت.</p></div></article><article class="faq-item"><button type="button" aria-expanded="false"><span>كيف يتم تحديد مواقيت الصلاة؟</span><i>+</i></button><div class="faq-answer"><p>يعتمد التطبيق على موقعك وطريقة الحساب المناسبة لإظهار المواقيت، ويمكنك مراجعة الإعدادات وفق مدينتك.</p></div></article><article class="faq-item"><button type="button" aria-expanded="false"><span>أين يمكنني تحميل التطبيق؟</span><i>+</i></button><div class="faq-answer"><p>يمكنك تحميل النسخة الرسمية من Google Play، أو زيارة صفحة الإصدارات على GitHub.</p></div></article></div>
+    </div></section>
 
-        <div class="feature-visual">
-          <div class="audio-preview-card">
-            <div class="audio-header">
-              <div class="audio-surah-info">
-                <h4>تلاوة تجريبية حية</h4>
-                <span>الشيخ مشاري راشد العفاسي • سورة الفاتحة</span>
-              </div>
-              <img src="assets/logo.png" alt="ذكر" width="44" height="44" style="border-radius: 10px;">
-            </div>
+    <section class="download-section"><div class="container"><div class="download-box reveal"><div class="download-mark" aria-hidden="true"><img src="assets/logo.png" alt=""></div><div><span>ابدأ رحلتك اليوم</span><h2>اجعل للذِكر مكانًا<br>في كل يوم</h2><p>حمّل التطبيق مجانًا، وابدأ تجربة أكثر هدوءًا وقربًا.</p></div><a class="store-button light-store" href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#34A853" d="M48 22l252 234L48 490c-7-8-11-19-11-33V55c0-14 4-25 11-33z"/><path fill="#4285F4" d="M300 256L77 49c14-8 29-7 45 2l263 149-85 56z"/><path fill="#FBBC04" d="M300 256l85 56-263 149c-16 9-31 10-45 2l223-207z"/><path fill="#EA4335" d="M385 200l55 31c31 18 31 32 0 50l-55 31-85-56 85-56z"/></svg><span><small>متوفر الآن على</small><strong>Google Play</strong></span></a></div></div></section>
+  </main>
 
-            <audio id="audioSample" preload="none">
-              <source src="assets/sound/mishary_alafasy_sample.mp3" type="audio/mpeg">
-            </audio>
-
-            <div class="audio-progress" id="audioProgressArea">
-              <div class="audio-progress-bar" id="audioProgressBar"></div>
-            </div>
-
-            <div class="audio-controls">
-              <button class="audio-btn play-btn" id="audioPlayBtn" title="تشغيل / إيقاف">
-                <span id="playIcon">▶</span>
-                <span id="pauseIcon" style="display: none;">❚❚</span>
-              </button>
-            </div>
-            <p style="text-align: center; margin-top: 16px; font-size: 0.85rem; color: rgba(255,255,255,0.85); font-weight: 600;">
-              اضغط زر التشغيل لتجربة نقاء الصوت مباشرة 🌿
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Feature 3: Prayer & Qibla -->
-      <div class="feature-block" id="prayer">
-        <div class="feature-content">
-          <span class="feature-badge">مواقيت الصلاة والأذان</span>
-          <h2 class="feature-title">مواقيت فلكية دقيقة وأذان بأصوات الحرمين الشريفين وبوصلة القبلة</h2>
-          <p class="feature-desc">
-            لا تفوتك صلاة بعد اليوم. حساب دقيق لمواقيت الصلاة الخمس والشروق بناءً على موقعك الجغرافي بأحدث الخوارزميات الفلكية المعتمدة من الهيئات الإسلامية الرسمية، مع تنبيهات الأذان الندي وبوصلة القبلة الذكية ثلاثية الأبعاد.
-          </p>
-
-          <ul class="feature-checklist">
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>دعم طرق الحساب المعتمدة عالمياً (أم القرى، الهيئة المصرية للمساحة، رابطة العالم الإسلامي...).</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>أصوات أذان متعددة وعذبة (أذان الحرم المكي، الحرم المدني، ابتهالات نصر الدين طوبار).</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>عد تنازلي لحظي يوضح بدقة الوقت المتبقي لدخول الصلاة التالية.</span>
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>بوصلة القبلة ثلاثية الأبعاد تعتمد على حساسات الجيروسكوب المغناطيسية لتحديد اتجاه الكعبة.</span>
-            </li>
-          </ul>
-
-          <a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer" class="btn btn-primary">اضبط صلاتك وقبلتك</a>
-        </div>
-
-        <div class="feature-visual" style="text-align: center; padding: 44px 24px;">
-          <img src="assets/qibla.svg" alt="بوصلة القبلة" width="115" height="115" style="margin-bottom: 22px;">
-          <h3 style="font-size: 1.45rem; color: var(--primary-dark); font-weight: 800; margin-bottom: 10px;">بوصلة القبلة وحساب المواقيت</h3>
-          <p style="color: var(--text-muted); font-size: 0.98rem; max-width: 400px; margin: 0 auto; line-height: 1.75;">
-            تحديد زاوية الكعبة المشرفة بدقة متناهية من أي مكان في العالم مع إظهار المسافة المتبقية بالكيلومترات.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 9 Cards Grid: All App Features -->
-  <section class="features-grid-section" id="features">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">باقة إيمانية متكاملة</span>
-        <h2 class="section-title">كل ما يحتاجه المسلم في تطبيق واحد فاخر</h2>
-        <p class="section-desc">مجموعة أدوات متناغمة تعينك على ذكر الله وإقامة الصلاة وتلاوة القرآن وحفظه في كل وقت.</p>
-      </div>
-
-      <div class="cards-grid">
-        <!-- 1. المصحف -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <img src="assets/quran.svg" alt="المصحف">
-          </div>
-          <h3>المصحف الشريف والتفاسير</h3>
-          <p>تصفح عالي الدقة، بحث فوري في نص القرآن، تفسير ميسر متصل لكل آية، ومعاني الكلمات والختمات.</p>
-        </div>
-
-        <!-- 2. الاستماع -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 18v-6a9 9 0 0 1 18 0v6M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-            </svg>
-          </div>
-          <h3>استماع القرآن بدون نت</h3>
-          <p>أصوات كبار القراء، تشغيل في الخلفية مع لوحة تحكم وسائط الأندرويد، مؤقت النوم، وقوائم تشغيل مخصصة.</p>
-        </div>
-
-        <!-- 3. مواقيت الصلاة -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <img src="assets/prayer_time.svg" alt="الصلاة">
-          </div>
-          <h3>مواقيت الصلاة والأذان</h3>
-          <p>حساب فلكي دقيق حسب موقعك، تنبيهات الأذان الندي فوق شاشة القفل، والعد التنازلي للصلاة القادمة.</p>
-        </div>
-
-        <!-- 4. القبلة -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <img src="assets/qibla.svg" alt="القبلة">
-          </div>
-          <h3>بوصلة اتجاه القبلة</h3>
-          <p>بوصلة ذكية ثلاثية الأبعاد تحدد اتجاه الكعبة المشرفة والزاوية بدقة اعتماداً على حساسات جهازك.</p>
-        </div>
-
-        <!-- 5. الأذكار -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <img src="assets/adhkar_morning_evening.svg" alt="الأذكار">
-          </div>
-          <h3>الأذكار وحصن المسلم</h3>
-          <p>أذكار الصباح والمساء، أذكار النوم، الصلاة، وأدعية القرآن والسنة مشكولة بالكامل مع عداد لمسي تفاعلي.</p>
-        </div>
-
-        <!-- 6. المسبحة -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <img src="assets/tasbih.svg" alt="المسبحة">
-          </div>
-          <h3>المسبحة الإلكترونية</h3>
-          <p>تسبيح إلكتروني ذكي مع اهتزاز لمسي (Haptic Feedback) عند كل تسبيحة وتصفير العداد وتحديد أهداف يومية.</p>
-        </div>
-
-        <!-- 7. الأحاديث النبوية -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <img src="assets/hadees.svg" alt="الحديث">
-          </div>
-          <h3>كتب الحديث النبوي الشريف</h3>
-          <p>مكتبة للأحاديث النبوية الصحيحة وكتب السنة المشرفة مع حديث اليوم المتجدد لترطيب اللسان بسنة الحبيب ﷺ.</p>
-        </div>
-
-        <!-- 8. الأدعية المختارة -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <img src="assets/duas.svg" alt="الأدعية">
-          </div>
-          <h3>الأدعية المأثورة والمستجابة</h3>
-          <p>أدعية قرآنية ونبوية مقسمة ومصنفة بحسب الحاجة والمناسبات مع بيان فضلها ومرجعها الشرعي.</p>
-        </div>
-
-        <!-- 9. بطاقات المشاركة الملكية -->
-        <div class="grid-card">
-          <div class="grid-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-              <circle cx="8.5" cy="8.5" r="1.5"/>
-              <polyline points="21 15 16 10 5 21"/>
-            </svg>
-          </div>
-          <h3>بطاقات مشاركة فاخرة</h3>
-          <p>شارك آيات القرآن الكريم والأدعية كصور عالية الدقة تحمل توقيع وشعار «ذكر» الملكي لتكون صدقة جارية.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Legal Section: Privacy Policy & Terms -->
-  <section class="legal-section" id="legal">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">الشفافية والأمان</span>
-        <h2 class="section-title">سياسة الخصوصية والشروط والأحكام</h2>
-        <p class="section-desc">
-          نلتزم بأعلى معايير حماية البيانات والشفافية. خصوصيتك أمانة مقدسة لدينا.
-          <br>
-          <a href="privacy_policy.html" target="_blank" style="color: var(--primary); font-weight: 700; text-decoration: underline;">
-            عرض النسخة الثنائية اللغة الرسمية (عربي / English) المعتمدة لمتجر Google Play
-          </a>
-        </p>
-      </div>
-
-      <div class="legal-card">
-        <div class="legal-tabs">
-          <button class="legal-tab-btn active" data-legal="privacy">سياسة الخصوصية (Privacy Policy)</button>
-          <button class="legal-tab-btn" data-legal="terms">الشروط والأحكام (Terms of Service)</button>
-        </div>
-
-        <!-- Privacy Policy Content -->
-        <div class="legal-pane" id="legal-privacy">
-          <div class="legal-content">
-            <h3>١. التزامنا بحماية خصوصيتك</h3>
-            <p>
-              تطبيق <strong>"ذِكْر" (Zekr App - com.zekrapp.islamic)</strong> هو تطبيق إسلامي غير ربحي أُنشئ ليكون وقفاً خالصاً لله تعالى وصدقة جارية. نؤكد بكل شفافية أن التطبيق <strong>لا يقوم بجمع، تخزين، مشاركة، أو بيع أي بيانات شخصية أو معلومات تعريفية</strong> عن المستخدمين لأي جهة أو طرف ثالث على الإطلاق.
-            </p>
-
-            <h3>٢. الأذونات المستخدمة والغرض منها</h3>
-            <p>يتطلب التطبيق بعض الأذونات الضرورية ليعمل بكامل كفاءته، وجميع هذه الأذونات تُعالج <strong>محلياً فقط على جهاز المستخدم</strong> دون إرسالها إلى أي خوادم خارجية:</p>
-            <ul>
-              <li>
-                <strong>إذن الموقع الجغرافي (ACCESS_FINE_LOCATION & ACCESS_COARSE_LOCATION):</strong> يُستخدم حصراً لحساب مواقيت الصلاة الفلكية بدقة بالغة (حسب خط العرض وخط الطول لمنطقتك) ولتحديد زاوية اتجاه القبلة المشرفة نحو الكعبة عبر البوصلة الرقمية. لا يتم حفظ موقعك أو تتبعه أو نقله خارج هاتفك.
-              </li>
-              <li>
-                <strong>إذن الإشعارات والتنبيهات (POST_NOTIFICATIONS & SCHEDULE_EXACT_ALARM):</strong> يُستخدم لعرض تنبيهات دخول أوقات الصلاة، الأذان الصوتي، وتذكيرات أذكار الصباح والمساء والورد اليومي. يمكنك تعطيل أو تخصيص أي تنبيه من داخل إعدادات التطبيق في أي وقت.
-              </li>
-              <li>
-                <strong>إذن خدمات التشغيل في الخلفية (FOREGROUND_SERVICE_MEDIA_PLAYBACK):</strong> يُستخدم للسماح بمواصلة تشغيل تلاوات القرآن الكريم والاستماع حتى عند إغلاق الشاشة أو استخدام تطبيقات أخرى، والتحكم بالصوت من شريط التنبيهات وشاشة القفل.
-              </li>
-              <li>
-                <strong>إذن التخزين المحلي (Local Storage):</strong> يُستخدم لحفظ تفضيلاتك (مثل اختيار القارئ، العلامات المرجعية، آخر صفحة مقروءة، وقوائم التشغيل) وتخزين ملفات السور التي تختار تنزيلها للاستماع بدون إنترنت.
-              </li>
-            </ul>
-
-            <h3>٣. الإعلانات والتتبع</h3>
-            <p>
-              تطبيق "ذِكْر" <strong>خالٍ تماماً وبشكل دائم من أي شبكات إعلانية (No Ads)</strong>، ولا يحتوي على أي أدوات تتبع تجارية أو برمجيات تحليل سلوك المستخدم. التطبيق صُمم ليكون نقياً لخشوعك وعبادتك.
-            </p>
-
-            <h3>٤. سلامة بيانات الأطفال</h3>
-            <p>
-              التطبيق مناسب وآمن لجميع الفئات العمرية، بما في ذلك الأطفال والعائلات، ولا يطلب تسجيل الدخول أو إدخال أي حسابات شخصية.
-            </p>
-
-            <h3>٥. صفحة السياسة الكاملة الرسمية</h3>
-            <p>
-              يمكنك الاطلاع على وثيقة سياسة الخصوصية الرسمية الكاملة المعتمدة لدى متجر Google Play باللغتين العربية والإنجليزية عبر هذا الرابط:
-              <br>
-              <a href="privacy_policy.html" target="_blank" style="color: var(--primary); font-weight: 800;">
-                https://eslamsaleeh98.github.io/Zekr-App/privacy_policy.html
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Terms and Conditions Content -->
-        <div class="legal-pane" id="legal-terms" style="display: none;">
-          <div class="legal-content">
-            <h3>١. شروط الاستخدام</h3>
-            <p>
-              باستخدامك لتطبيق "ذِكْر"، فإنك توافق على استخدام هذا التطبيق في الأغراض المشروعة والصالحة للاستفادة الشخصية والدينية، ونشر الخير والتذكير بكتاب الله وسنة رسوله ﷺ.
-            </p>
-
-            <h3>٢. الوقفية والصدقة الجارية</h3>
-            <p>
-              هذا العمل هو صدقة جارية ووقف إسلامي لوجه الله تعالى. يُسمح للجميع بتحميل التطبيق واستخدامه ومشاركته مجاناً دون دفع أي رسوم حالياً أو مستقبلاً.
-            </p>
-
-            <h3>٣. حقوق الملكية الفكرية والمصدر المفتوح</h3>
-            <p>
-              كود التطبيق متوفر ومفتوح على منصة GitHub للراغبين في التعلم أو المساهمة في تطوير ميزات جديدة في سبيل الله. يُرجى احترام نصوص القرآن الكريم ومطابقتها للمصاحف الرسمية المعتمدة وتجنب استخدام التطبيق في أي أغراض تجارية أو تتنافى مع الشريعة الإسلامية.
-            </p>
-
-            <h3>٤. دقة المواقيت والنصوص</h3>
-            <p>
-              تمت مراجعة النصوص القرآنية بدقة فائقة اعتماداً على الرسم العثماني لمجمع الملك فهد لطباعة المصحف الشريف، وتعتمد مواقيت الصلاة على أدق المكتبات الفلكية العالمية. ومع ذلك، يُرجى التأكد دائماً من مراعاة التوقيت المحلي والإعلانات الرسمية لوزارات الأوقاف والشؤون الإسلامية في بلدك.
-            </p>
-
-            <h3>٥. وثيقة الشروط المستقلة</h3>
-            <p>
-              يمكنك فتح وقراءة الشروط في صفحة مستقلة عبر هذا الرابط:
-              <br>
-              <a href="terms.html" target="_blank" style="color: var(--primary); font-weight: 800;">
-                https://eslamsaleeh98.github.io/Zekr-App/terms.html
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">الأسئلة الشائعة</span>
-        <h2 class="section-title">إجابات عن أهم الأسئلة التي قد تهمك</h2>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>هل التطبيق مجاني بالكامل وبدون أي إعلانات؟</span>
-            <span class="faq-icon">▾</span>
-          </div>
-          <div class="faq-body">
-            نعم، تطبيق "ذِكْر" مجاني 100% ولا يحتوي على أي إعلانات تجارية نهائياً، صُمم بنية الصدقة الجارية والوقف في سبيل الله.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>هل يعمل التطبيق بدون اتصال بالإنترنت (Offline)؟</span>
-            <span class="faq-icon">▾</span>
-          </div>
-          <div class="faq-body">
-            نعم، المصحف الشريف كاملاً، التفاسير، معاني الكلمات، الأذكار، الأدعية، مواقيت الصلاة، والمسبحة تعمل جميعها بدون إنترنت. وتحتاج للإنترنت فقط عند تنزيل التلاوات الصوتية لأول مرة أو التحديث.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>كيف يتم حساب مواقيت الصلاة والقبلة؟</span>
-            <span class="faq-icon">▾</span>
-          </div>
-          <div class="faq-body">
-            يتم حساب المواقيت فلكياً بدقة عالية وفق الهيئات المعتمدة (مثل أم القرى، الهيئة العامة للمساحة بمصر، رابطة العالم الإسلامي، وغيرها) بناءً على إحداثيات موقعك. كما تعتمد بوصلة القبلة على حساسات الجيروسكوب المغناطيسية لتحديد اتجاه مكة المكرمة مباشرة.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>هل يستمر مشغل الصوت في العمل عند إغلاق الشاشة؟</span>
-            <span class="faq-icon">▾</span>
-          </div>
-          <div class="faq-body">
-            نعم، التطبيق يستخدم محرك وسائط أصيل (Native MediaSession) يضمن استمرار التلاوة في الخلفية مع لوحة تحكم كاملة تظهر في شريط التنبيهات وشاشة القفل، مع دعم أزرار سماعات البلوتوث وشاشات السيارات.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-header">
-            <span>كيف يمكنني المساهمة أو الإبلاغ عن ملاحظة في التطبيق؟</span>
-            <span class="faq-icon">▾</span>
-          </div>
-          <div class="faq-body">
-            يمكنك المساهمة برمجياً أو تقديم أي ملاحظات واقتراحات عبر صفحة المشروع الرسمية على منصة GitHub: <a href="https://github.com/eslamsaleeh98/Zekr-App/issues" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 700;">GitHub Issues</a>.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Download Section -->
-  <section class="cta-banner" id="download">
-    <div class="container">
-      <div class="cta-box">
-        <h2 class="cta-title">ابدأ رحلتك الإيمانية المباركة مع «ذِكْر»</h2>
-        <p class="cta-desc">
-          اجعل لسانك رطباً بذكر الله واجعل القرآن ربيع قلبك كل يوم. حمل التطبيق الآن واستمتع بتجربة إسلامية ملكية فريدة وخالصة لوجه الله.
-        </p>
-
-        <div class="cta-actions">
-          <!-- Google Play Button -->
-          <a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer" class="store-badge-btn" style="padding: 14px 28px;">
-            <svg viewBox="0 0 512 512" width="28" height="28">
-              <path fill="#4285F4" d="M47.1 24.3C40.6 31 37 41.5 37 54.8v402.4c0 13.3 3.6 23.8 10.1 30.5l1.6 1.4 225.4-225.4v-5.4L48.7 22.9l-1.6 1.4z"/>
-              <path fill="#FBBC04" d="M349.5 329.1l-75.4-75.4v-5.4l75.4-75.4 1.7 1 89.3 50.8c25.5 14.5 25.5 38.3 0 52.8l-89.3 50.8-1.7.8z"/>
-              <path fill="#EA4335" d="M274.1 253.7L48.7 479.1c8.4 8.9 22.3 9.9 37.9 1.1l264.6-150.3-77.1-76.2z"/>
-              <path fill="#34A853" d="M274.1 258.3l77.1-76.2L86.6 31.8C71 23 57.1 24 48.7 32.9L274.1 258.3z"/>
-            </svg>
-            <div class="store-text">
-              <span class="store-subtitle">متوفر على</span>
-              <span class="store-title">Google Play</span>
-            </div>
-          </a>
-
-          <!-- Direct APK Button -->
-          <a href="https://github.com/eslamsaleeh98/Zekr-App/releases" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="padding: 16px 32px; font-size: 1.05rem;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-            </svg>
-            تحميل حزمة APK (أحدث إصدار)
-          </a>
-
-          <!-- GitHub Repo Button -->
-          <a href="https://github.com/eslamsaleeh98/Zekr-App" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 16px 26px; font-size: 1.05rem;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-            </svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-about">
-          <img src="assets/zekr_logo.svg" alt="شعار ذكر" height="42" style="filter: brightness(0) invert(1);">
-          <p>
-            تطبيق إسلامي شامل وفاخر يجمع بين قدسية المصحف الشريف، جمال التلاوات الخاشعة، ودقة مواقيت الصلاة والأذكار. صُمم ليكون صدقة جارية ووقفاً في سبيل الله.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>أقسام التطبيق</h4>
-          <ul>
-            <li><a href="#mushaf">المصحف الشريف</a></li>
-            <li><a href="#audio">مشغل التلاوات</a></li>
-            <li><a href="#prayer">مواقيت الصلاة والأذان</a></li>
-            <li><a href="#features">الأذكار والمسبحة</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>المعلومات والسياسات</h4>
-          <ul>
-            <li><a href="privacy_policy.html">سياسة الخصوصية الرسمية (Google Play)</a></li>
-            <li><a href="terms.html">الشروط والأحكام</a></li>
-            <li><a href="#faq">الأسئلة الشائعة</a></li>
-            <li><a href="https://github.com/eslamsaleeh98/Zekr-App" target="_blank" rel="noopener noreferrer">مستودع المشروع</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>المطور والمشروع</h4>
-          <ul>
-            <li><a href="https://github.com/eslamsaleeh98" target="_blank" rel="noopener noreferrer">المطور: إسلام صالح</a></li>
-            <li><a href="https://github.com/eslamsaleeh98/Zekr-App" target="_blank" rel="noopener noreferrer">مستودع Zekr-App على GitHub</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer">صفحة التطبيق على Google Play</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>
-          جميع الحقوق محفوظة © <span id="currentYear">2026</span> • تطبيق ذِكْر (Zekr App)
-        </div>
-        <div class="footer-dedication">
-          نسأل الله أن يجعله صدقة جارية وخالصاً لوجهه الكريم 🌿
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
+  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><img src="assets/zekr_logo.svg" alt="ذِكر" width="132" height="46"><p>رفيقك اليومي للقرآن الكريم والأذكار ومواقيت الصلاة.</p></div><div class="footer-links"><strong>التطبيق</strong><a href="#experience">التجربة</a><a href="#features">المزايا</a><a href="#audio">التلاوات</a></div><div class="footer-links"><strong>روابط مهمة</strong><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a><a href="https://github.com/eslamsaleeh98/Zekr-App" target="_blank" rel="noopener noreferrer">GitHub</a></div><div class="footer-cta"><strong>متوفر على أندرويد</strong><a href="https://play.google.com/store/apps/details?id=com.zekrapp.islamic" target="_blank" rel="noopener noreferrer">تحميل من Google Play <span>←</span></a></div></div><div class="container footer-bottom"><span>© <span id="currentYear"></span> تطبيق ذِكر. جميع الحقوق محفوظة.</span><span>صُنع بمحبة، ابتغاء مرضاة الله</span></div></footer>
   <script src="js/main.js"></script>
 </body>
 </html>
