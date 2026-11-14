@@ -202,7 +202,8 @@ button { color: inherit; }
 
 .site-footer { background: #071e19; color: rgba(255,255,255,.6); padding-top: 70px; }.footer-main { display: grid; grid-template-columns: 1.8fr .8fr .9fr 1.2fr; gap: 55px; padding-bottom: 55px; }.footer-brand img { filter: brightness(0) invert(1); width: 125px; }.footer-brand p { max-width: 300px; font-size: .85rem; margin-top: 17px; }.footer-links { display: flex; flex-direction: column; gap: 10px; }.footer-links strong,.footer-cta strong { color: #fff; font-size: .87rem; margin-bottom: 8px; }.footer-links a { font-size: .82rem; transition: color .2s; }.footer-links a:hover { color: var(--gold-light); }.footer-cta { display: flex; flex-direction: column; }.footer-cta a { color: var(--gold-light); font-size: .83rem; }.footer-cta a span { display: inline-block; margin-right: 6px; }.footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,.08); font-size: .74rem; }
 
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }.reveal.visible { opacity: 1; transform: none; }
+.reveal { opacity: 1; transform: none; }.reveal.visible { animation: reveal-in .7s ease both; }
+@keyframes reveal-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }.reveal { opacity: 1; transform: none; } }
 
 @media (max-width: 1050px) {
